@@ -1,4 +1,5 @@
 public class variables {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         // Números enteros
         int a = 3453;
