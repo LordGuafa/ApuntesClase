@@ -27,6 +27,14 @@ public class Vista {
         return texto;
     }
 
+    public String capturar(int num, String mensaje) {
+        return mensaje;
+    }
+
+    public int capturar(String mensaje, int num) {
+        return num;
+    }
+
     public void mostrar(String mensaje) {
         System.out.println(mensaje);
     }

@@ -15,7 +15,7 @@ public class Control {
             int number = Integer.parseInt(vista.capturar("Ingresa un numero"));
             vista.mostrar(number + " es un número entero válido: " + number);
         } catch (NumberFormatException e) {
-            vista.mostrar(" no es un número entero válido.");
+            vista.mostrar(" no es un número entero válido." + e.getMessage());
         } finally {
             vista.mostrar("Esto siempre se va a ejecutar");
         }
