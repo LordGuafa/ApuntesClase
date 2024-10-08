@@ -12,6 +12,7 @@ public class Vista {
         this.control = control;
     }
 
+    // Método para capturar texto por consola sin recibir parámetros
     public String capturar() {
         @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
@@ -19,6 +20,7 @@ public class Vista {
         return texto;
     }
 
+    // Sobrecarga del método ` capturar ` recibiendo un parámetro
     public String capturar(String mensaje) {
         System.out.println(mensaje);
         @SuppressWarnings("resource")
@@ -27,10 +29,15 @@ public class Vista {
         return texto;
     }
 
+    // Sobrecarga del método ` capturar ` agregando un parámatro adicional
     public String capturar(int num, String mensaje) {
         return mensaje;
     }
 
+    // Se puede cambiar el tipo de retorno del método mediante sobrecarga, pero se
+    // debe diferenciar ya sea por un parámetro adicional o como en este caso
+    // cambiando el orden de los parámetros
+    // Recordemos que f(x,y) != f(y,x)
     public int capturar(String mensaje, int num) {
         return num;
     }
